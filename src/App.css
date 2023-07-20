@@ -1,0 +1,115 @@
+body {
+  font-family: 'VT323', monospace;
+  font-size: 17pt;
+  background-color: #f4f4f4;
+  padding: 30px;
+  color: #333;
+  background-image: url('./train.gif');
+  background-position: center;
+  background-size: cover;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto 300px; /* 0top-300bottom  faz aparecer o wallpaper inteiro */
+  background-color: #f4f4f4;
+  padding: 20px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.59);
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 20pt;
+}
+
+p {
+  margin: 10px 0;
+}
+
+input {
+  box-sizing: border-box; /* nao vai sair da area do elemento pai */
+  font-family: 'VT323', monospace;
+  font-size: 13pt;
+}
+
+button {
+  font-family: 'VT323', monospace;
+  font-size: 13pt;
+  background-color: rgb(74, 149, 159);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer; /* mouse encima muda */
+  opacity: 0.8;
+  transition: .3s; /* trasição do hover */
+}
+
+button:hover { /* quando mouse encima */
+  opacity: 1;
+}
+
+.todo-list {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo {
+  background-color: white;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.complete {
+  background-color: #5cb85c;
+}
+
+.remove {
+  background-color: #d9534f;
+  margin-left: 5px;
+}
+
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+
+input, select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  width: 100%;
+  font-family: 'VT323', monospace;
+  font-size: 13pt;
+}
+
+select {
+  color: #737373;
+}
+
+.filter, .search {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.filter-options div{
+  flex: 1 1 0;
+}
+
+.filter-options button {
+  margin-right: 5px;
+}
